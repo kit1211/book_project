@@ -56,6 +56,21 @@ router.put('/:id',
 );
 
 
+router.delete('/:id', 
+    async function(req, res, next){
+        try {
+            const result = await bookService.remove(req.params.id);
+            res.json({
+                result, 
+                time: helper.getBangkokTimeISO()
+            });
+        } catch (error) {
+            console.error(`Error while deleting book`, error.message);
+            next(error);
+        }
+    }
+);
+
 
 
 module.exports = router;

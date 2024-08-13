@@ -50,8 +50,13 @@ async function update(id, book){
 //delete
 async function remove(id){
     const result = await db.query(
-        ``, []
-    )
+        `DELETE FROM books WHERE books.id = ?`, [id]
+    );
+
+    let msg = "Error in deleting book";
+    if(result.affectedRows){
+        msg = "Book deleted successfully";
+    }
 }
 
 module.exports ={

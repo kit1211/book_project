@@ -9,6 +9,6 @@ async function query( sql, params ) {
     return results;
 }
 
-module.export = {
+module.exports = {
     query
 }

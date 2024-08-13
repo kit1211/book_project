@@ -288,3 +288,91 @@
   }
 }
 
+{
+  "data": [
+    {
+      "id": 1,
+      "title": "To Kill a Mockingbird",
+      "author": "Harper Lee",
+      "published_year": 1960,
+      "genre": "Fiction",
+      "rating": "4.27",
+      "created_at": "2024-08-13T05:00:00.000Z",
+      "updated_at": "2024-08-13T05:00:00.000Z"
+    },
+    {
+      "id": 2,
+      "title": "1984",
+      "author": "George Orwell",
+      "published_year": 1949,
+      "genre": "Dystopian",
+      "rating": "4.17",
+      "created_at": "2024-08-13T05:00:00.000Z",
+      "updated_at": "2024-08-13T05:00:00.000Z"
+    },
+    {
+      "id": 3,
+      "title": "The Great Gatsby",
+      "author": "F. Scott Fitzgerald",
+      "published_year": 1925,
+      "genre": "Classic",
+      "rating": "3.91",
+      "created_at": "2024-08-13T05:00:00.000Z",
+      "updated_at": "2024-08-13T05:00:00.000Z"
+    },
+    {
+      "id": 4,
+      "title": "The Catcher in the Rye",
+      "author": "J.D. Salinger",
+      "published_year": 1951,
+      "genre": "Classic",
+      "rating": "3.80",
+      "created_at": "2024-08-13T05:00:00.000Z",
+      "updated_at": "2024-08-13T05:00:00.000Z"
+    },
+    {
+      "id": 5,
+      "title": "Pride and Prejudice",
+      "author": "Jane Austen",
+      "published_year": 1813,
+      "genre": "Romance",
+      "rating": "4.25",
+      "created_at": "2024-08-13T05:00:00.000Z",
+      "updated_at": "2024-08-13T05:00:00.000Z"
+    },
+    {
+      "id": 6,
+      "title": "Pornhub Book",
+      "author": "J J",
+      "published_year": 2024,
+      "genre": "nude",
+      "rating": "5.00",
+      "created_at": "2024-08-13T08:34:31.000Z",
+      "updated_at": "2024-08-13T08:34:49.000Z"
+    },
+    {
+      "id": 7,
+      "title": "Dart Codex",
+      "author": "MQQ",
+      "published_year": 2023,
+      "genre": "Romance",
+      "rating": "4.25",
+      "created_at": "2024-08-13T08:45:52.000Z",
+      "updated_at": "2024-08-13T08:45:52.000Z"
+    },
+    {
+      "id": 10,
+      "title": "SELECT * FROM books WHERE id = '' OR '1'='1'",
+      "author": "MQQ",
+      "published_year": 2023,
+      "genre": "Romance",
+      "rating": "4.25",
+      "created_at": "2024-08-13T08:47:40.000Z",
+      "updated_at": "2024-08-13T08:47:40.000Z"
+    }
+  ],
+  "meta": {
+    "page": 1
+  }
+}
+

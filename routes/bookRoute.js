@@ -4,6 +4,8 @@ const bookService   = require('../services/bookService');
 const helper        = require('../helper');
 const fs            = require('fs');
 
+
+
 router.get('/',  
     async function (req, res, next){
         try {
@@ -17,6 +19,30 @@ router.get('/',
             console.error(`Error while getting books `, error.message);
             next(error);
         }
+    }
+);
+
+
+router.post('/', 
+    async function(req, res, next) {
+        try {
+            const result = await bookService.create(req.body);
+            fs.appendFileSync('./logsTest/route_postInsert_func.txt', JSON.stringify(result, null, 2) + '\n\n');
+            res.json({
+                result, 
+                time: helper.getBangkokTimeISO()
+            });
+        } catch (error) {
+            console.error(`Error while creating book`, error.message);
+            next(error);
+        }
+    }
+);
+
+
+router.put('/:id', 
+    async function(req, res, next){
+
     }
 );
 

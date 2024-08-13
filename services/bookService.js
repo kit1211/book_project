@@ -31,6 +31,21 @@ async function create(book){
 }
 
 
+//update
+async function update(id, book){
+    const result = await db.query(
+        `UPDATE books SET title=?, author=?, published_year=?, genre=?, rating=? WHERE id=?`,
+        [book.title, book.author, book.published_year, book.genre, book.rating, id]
+    );
+    
+    let msg = "Error in updating book";
+    if(result.affectedRows){
+        msg = "Book updated successfully";
+    }
+    return {msg};
+}
+
+
 module.exports ={
     getMulti, create
 }

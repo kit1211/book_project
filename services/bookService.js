@@ -46,7 +46,15 @@ async function update(id, book){
 }
 
 
+
+//delete
+async function remove(id){
+    const result = await db.query(
+        ``, []
+    )
+}
+
 module.exports ={
-    getMulti, create
+    getMulti, create, update
 }
 

@@ -14,3 +14,20 @@
   "msg": "Book created successfully"
 }
 
+{
+  "msg": "Book created successfully"
+}
+
+{
+  "incomingRequest": {
+    "title": "SELECT * FROM books WHERE author = '' OR '1'='1'",
+    "author": "TTX",
+    "published_year": 2013,
+    "genre": "Romance",
+    "rating": "2.45"
+  },
+  "result": {
+    "msg": "Book created successfully"
+  }
+}
+

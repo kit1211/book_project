@@ -16,7 +16,22 @@ async function getMulti(page = 1){ //
 }
 
 
+//create
+async function create(book){
+    const result = await db.query(
+        `INSERT INTO books (title, author, published_year, genre, rating) VALUES (?, ?, ?, ?, ?)`,
+        [book.title, book.author, book.published_year, book.genre, book.rating]
+    );
+    
+    let msg = "Error in creating book";
+    if(result.affectedRows){
+        msg = "Book created successfully";
+    }
+    return {msg};
+}
+
+
 module.exports ={
-    getMulti
+    getMulti, create
 }
 

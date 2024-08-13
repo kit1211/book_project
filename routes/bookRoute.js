@@ -74,4 +74,15 @@ router.delete('/:id',
 
 
 
+
+router.get('/:id', async function(req, res, next) {
+    try {
+      res.json(await bookService.search(req.params.id));
+    } catch (err) {
+      console.error(`Error while searching book `, err.message);
+      next(err);
+    }
+});
+
+
 module.exports = router;

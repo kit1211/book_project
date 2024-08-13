@@ -45,6 +45,14 @@ async function update(id, book){
     return {msg};
 }
 
+//procedures search
+async function search(id){
+    const rows = await db.callSpSearch(id);
+    const data = helper.emptyOrRow(rows);
+    return {
+        data
+    }
+}
 
 
 //delete
@@ -61,6 +69,6 @@ async function remove(id){
 }
 
 module.exports ={
-    getMulti, create, update, remove
+    getMulti, create, update, remove, search
 }
 

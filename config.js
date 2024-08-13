@@ -7,5 +7,6 @@ const config ={
         connectTimeout: 60000
     },
     listPerPage: 10,
+    multipleStatements: true,
 }
 module.exports = config;

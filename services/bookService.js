@@ -57,9 +57,10 @@ async function remove(id){
     if(result.affectedRows){
         msg = "Book deleted successfully";
     }
+    return { msg };
 }
 
 module.exports ={
-    getMulti, create, update
+    getMulti, create, update, remove
 }
 
